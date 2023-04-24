@@ -11,9 +11,14 @@
   </a>
 <br>
 <img src="https://komarev.com/ghpvc/?username=ChibuikeOnuba&style=flat-square&color=blue" alt=""/>
-
 <h1>
-  hey there
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+  DIABETES PREDICTION APP
+  
 </h1>
+
+<h4>Click <a href="https://twitter.com/chibuike_heis">here</a> to see the app in action</h4>
+</div>
+
+<div align="center">
+  <img src="diabetes_image.jpg" width="800" height="300"/>
 </div>
