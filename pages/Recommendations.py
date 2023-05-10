@@ -5,5 +5,8 @@ def fancy_header(text, font_size=47):
     
 
 
-
-fancy_header('COMING SOON!...🚧')
+bookings = ['www.iCliniq.com', 'www.sesamecare.com', 'www.secondopinions.com']
+for i in bookings:
+    st.write(i)
+    
+fancy_header('Under Construction!...🚧')
