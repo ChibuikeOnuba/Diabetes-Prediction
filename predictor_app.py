@@ -2,17 +2,20 @@ import streamlit as st
 import pickle as pk
 
 
-#importing the knn model
-pickle1 = open('knn.pkl', 'rb')
-knn_classifier = pk.load(pickle1)
+#Loading the models
 
-#importing the rfc model
-pickle2 = open('rfc.pkl', 'rb')
-rfc_classifier = pk.load(pickle2)
+with open('knn.pkl', 'rb') as file1:
+    # Load the data from the pickle file
+    knn_classifier = pk.load(file1)
 
-#importing the svm model
-pickle3 = open('svc.pkl', 'rb')
-svc_classifier = pk.load(pickle3)
+
+with open('rfc.pkl', 'rb') as file:
+    # Load the data from the pickle file
+    rfc_classifier = pk.load(file)
+
+with open('svc.pkl', 'rb') as file3:
+    # Load the data from the pickle file
+    svc_classifier = pk.load(file3)
 
 features = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness',  'BMI', 'DiabetesPedigreeFunction', 'Age']
 #Creating a model that performs knn classification on user input
