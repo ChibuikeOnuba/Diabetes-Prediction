@@ -1,9 +1,10 @@
 import streamlit as st
 import pickle as pk
-
+import os
 
 #Loading the models
 
+print("Current Working Directory:", os.getcwd())  # Add this line to check the current directory
 with open('knn.pkl', 'rb') as file1:
     # Load the data from the pickle file
     knn_classifier = pk.load(file1)
