@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle as pk
 import os
+import sklearn
 
 #Loading the models
 
