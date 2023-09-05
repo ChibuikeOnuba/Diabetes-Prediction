@@ -8,8 +8,10 @@ import sklearn
 print("Current Working Directory:", os.getcwd())  # Add this line to check the current directory
 with open('knn.pkl', 'rb') as file1:
     # Load the data from the pickle file
-    knn_classifier = pk.load(file1)
-
+    try:
+        knn_classifier = pk.load(file1)
+    except Exception as e:
+        print("Error loading the file:", str(e))
 
 with open('rfc.pkl', 'rb') as file:
     # Load the data from the pickle file
